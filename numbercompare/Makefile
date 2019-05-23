@@ -1,10 +1,10 @@
-all = numbercomp
+all = numbercompare
 
-numbercomp: numbercomp.o
-	gcc -m32 -o numbercomp numbercomp.o
+numbercompare: numbercompare.o
+	gcc -m32 -o numbercompare numbercompare.o
 
-numbercomp.o: numbercomp.asm
-	nasm -f elf32 -g numbercomp.asm
+numbercompare.o: numbercompare.asm
+	nasm -f elf32 -g numbercompare.asm
 
 clean:
-	rm -rf *.o numbercomp
+	rm -rf *.o numbercompare
